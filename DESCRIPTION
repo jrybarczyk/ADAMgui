@@ -8,7 +8,7 @@ Author: Giordano Bruno Sanches Seco <giordano.bruno@unesp.br>,
     Agnes Alessandra Sekijima Takeda <agnes.takeda@unesp.br>,
     Jose Luiz Rybarczyk Filho <jose.luiz@unesp.br>
 Maintainer: Jose Luiz Rybarczyk Filho <jose.luiz@unesp.br>
-Description: ADAMgui is a  ... 
+Description: ADAMgui is a  blablabla
 Depends: R(>= 3.5), stats, utils, methods
 Imports: GO.db (>= 3.6.0), dplyr (>= 0.7.6), shiny (>= 1.1.0),
     stringr (>= 1.3.1), stringi (>= 1.2.4), varhandle (>= 2.0.3),
