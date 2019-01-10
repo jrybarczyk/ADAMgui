@@ -48,7 +48,7 @@ expression behavior within it. Features as differential expression and fold
 change can be easily seen.
 
 # Graphical User Interface (GUI)
-The x package contains 2 graphical modules for visualization and analysis of 
+The ADAMgui package contains 2 graphical modules for visualization and analysis of 
 the GFAGAnalysis output file. These modules are shiny-generated (GUI)s that
 allows the user to create and download plots in .eps format. The functions that
 launches those applications are: GFAGpathUi() and GFAGtargetUi(). The sections
