@@ -492,7 +492,7 @@ server <- function(input, output, session) {
         counter$countervalue<-0
         counter3$countervalue3<-0
         counter4$countervalue4<-0
-        counter5$countervalue5<-1
+        counter5$countervalue5<-0
         counter6$countervalue6<-0
         counter7$countervalue7<-0
         counter8$countervalue8<-0
