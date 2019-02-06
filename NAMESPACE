@@ -2,6 +2,7 @@
 
 export(GFAGpathUi)
 export(GFAGtargetUi)
+import(ADAM)
 import(GO.db)
 import(RColorBrewer)
 import(colorRamps)
