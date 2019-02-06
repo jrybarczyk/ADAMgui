@@ -1,6 +1,6 @@
 ---
 title: "ADAMgui: Activity and Diversity Analysis Module Graphical User Interface"
-author: "Gioradano B. S. Seco, André L. Molan,  Agnes A. S. Takeda, 
+author: "Giordano B. S. Seco, André L. Molan,  Agnes A. S. Takeda, 
 Jose L. Rybarczyk-Filho"
 date: "`r doc_date()`"
 package: "`r pkg_ver('ADAMgui')`"
@@ -48,7 +48,7 @@ expression behavior within it. Features as differential expression and fold
 change can be easily seen.
 
 # Graphical User Interface (GUI)
-The ADAMgui package contains 2 graphical modules for visualization and analysis of 
+The x package contains 2 graphical modules for visualization and analysis of 
 the GFAGAnalysis output file. These modules are shiny-generated (GUI)s that
 allows the user to create and download plots in .eps format. The functions that
 launches those applications are: GFAGpathUi() and GFAGtargetUi(). The sections
@@ -67,12 +67,14 @@ entries of the *Aedes Aegypt* data used in the statistical modules.
 To generate the input file 'ResultAnalysisAedes.txt' use the commands on R 
 console listed bellow. First load the data in the package:
 ```{r eval=TRUE, fig.height=6, fig.width=6}
-library(ADAM)
+library(ADAMgui)
 data("ResultAnalysisAedes")
 ```
 
 Then select the first 10 rows:
 ```{r eval=TRUE, fig.height=6, fig.width=6}
+library(ADAMgui)
+data("ResultAnalysisAedes")
 dt<-ResultAnalysisAedes[1:10,]
 ```
 And save it:
@@ -312,7 +314,7 @@ write.table(dt,'DiffAedes.txt',sep='\t',quote = F,
 The app can be launched in local machine or your default browser:
 
 ```{r eval=TRUE, fig.height=6, fig.width=6}
-library(GOViewer)
+library(ADAMgui)
 ```
 
 ```{r eval=FALSE, fig.height=6, fig.width=6}
