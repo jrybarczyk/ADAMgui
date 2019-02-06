@@ -1,7 +1,7 @@
 #' @title Aedes aegypti RNA-seq differential expression data example
 #' @description  A sample fragment of differential gene expression from an
 #' RNA-seq experiment of Aedes aegypti mosquito.
-#' @format A data.frame with 1963 rows and 3 variables
+#' @format A data.frame with 1973 rows and 3 variables
 #' @name DiffAedes
 #' @references AKBARI, O. S. et al. The developmental transcriptome of the
 #' mosquito aedes aegypti, an invasive species and major arbovirus vector.
@@ -9,19 +9,6 @@
 #' p. 1493–1509, 2013.
 #' @examples
 #' data(DiffAedes)
-NULL
-
-#' @title Aedes aegypti RNA-seq data expression
-#' @description  A sample fragment of gene expression from an RNA-seq experiment
-#' of Aedes aegypti mosquito.
-#' @format A data.frame with 2000 rows and 5 variables
-#' @name ExpressionAedes
-#' @references AKBARI, O. S. et al. The developmental transcriptome of the
-#' mosquito aedes aegypti, an invasive species and major arbovirus vector. G3:
-#' Genes— Genomes— Genetics, Genetics Society of America, v. 3, n. 9,
-#' p. 1493–1509, 2013.
-#' #' @examples
-#' data(ExpressionAedes)
 NULL
 
 #' @title Relation between Aedes aegypti genes and KEGG pathways

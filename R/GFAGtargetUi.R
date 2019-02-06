@@ -19,7 +19,7 @@
 #'         wellPanel checkboxInput br checkboxGroupInput a strong
 #'         renderPrint fluidRow showNotification brushedPoints
 #' @import ggsignif RColorBrewer colorRamps gridExtra knitr stringr stringi
-#' @import varhandle ggplot2 ggrepel testthat GO.db shinyjs
+#' @import varhandle ggplot2 ggrepel testthat GO.db shinyjs ADAM
 #' @details This shiny (GUI) enables the creation of a plot that shows the
 #' expression of the targets in a selected path between control and case.
 #' See the vignette for more information.
