@@ -15,7 +15,6 @@
 #' @examples
 #' #Creating input files
 #' data(DiffAedes)
-#' data(ExpressionAedes)
 #' data(GeneFunctionAedes)
 #' data(ResultAnalysisAedes)
 #' \dontrun{
@@ -23,33 +22,18 @@
 #' write.table(DiffAedes,file = "DiffAedes.txt",sep = "\t", col.names = TRUE,
 #' row.names = FALSE, quote = FALSE)
 #' #Input file 2
-#' write.table(ExpressionAedes,file = "ExpressionAedes.txt",sep = "\t",
-#' col.names = TRUE, row.names = FALSE, quote = FALSE)
-#' #Input file 3
 #' write.table(GeneFunctionAedes,file = "GeneFunctionAedes.txt",sep = "\t",
 #' col.names = TRUE, row.names = FALSE, quote = FALSE)
-#' #Input file 4
+#' #Input file 3
 #' write.table(ResultAnalysisAedes,file = "ResultAnalysisAedes.txt",sep = "\t",
 #' col.names = TRUE, row.names = FALSE, quote = FALSE)
 #' #Grahphical analysis
 #' GFAGpathUi(browser = TRUE) # Launch the app in your default web browser.
 #' GFAGpathUi(browser = FALSE) # Launch the app in your local machine.
 #' }
-
-GFAGpathUi <-function(browser){
-    tryCatch({
-        if (browser){
-            shiny::runApp(paste0(system.file("shiny",
-                                            package="ADAMgui"),
-                                            "/app.R"),
-                                            launch.browser = TRUE)
-        } else {
-            shiny::runApp(paste0(system.file("shiny",
-                                            package="ADAMgui"),
-                                            "/app.R"))
-        }
-    },
-    error = function(e) {print("Parameter must be TRUE or FALSE")
-    }
-    )}
-
+GFAGpathUi <- function(browser = TRUE) { 
+  tryCatch(
+    shiny::runApp(paste0(system.file("shiny", package="ADAMgui"),
+                         "/app.R"), launch.browser = browser),
+    error = print("Parameter must be TRUE or FALSE")
+  )} 

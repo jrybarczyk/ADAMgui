@@ -32,38 +32,26 @@
 #' @author Giordano Bruno Sanches Seco <giordano.bruno@unesp.br>
 #' @examples
 #' #Creating input files
-#' data(DiffHs)
-#' data(ExpressionHs)
-#' data(GeneFunctionHs)
-#' data(ResultAnalysisHs)
+#' data(DiffAedes)
+#' data(GeneFunctionAedes)
+#' data(ResultAnalysisAedes)
 #' \dontrun{
 #' #Input file 1
-#' write.table(DiffHs,file = "DiffHs.txt",sep = "\t", col.names = TRUE,
+#' write.table(DiffHs,file = "DiffAedes.txt",sep = "\t", col.names = TRUE,
 #' row.names = FALSE, quote = FALSE)
 #' #Input file 2
-#' write.table(ExpressionHs,file = "ExpressionHs.txt",sep = "\t",
+#' write.table(GeneFunctionHs,file = "GeneFunctionAedes.txt",sep = "\t",
 #' col.names = TRUE, row.names = FALSE, quote = FALSE)
 #' #Input file 3
-#' write.table(GeneFunctionHs,file = "GeneFunctionHs.txt",sep = "\t",
-#' col.names = TRUE, row.names = FALSE, quote = FALSE)
-#' #Input file 4
-#' write.table(ResultAnalysisHs,file = "ResultAnalysisHs.txt",sep = "\t",
+#' write.table(ResultAnalysisAedes,file = "ResultAnalysisAedes.txt",sep = "\t",
 #' col.names = TRUE, row.names = FALSE, quote = FALSE)
 #' #Grahphical analysis
 #' GFAGtargetUi(browser = TRUE) # Launch the app in your default web browser.
 #' GFAGtargetUi(browser = FALSE) # Launch the app in your local machine.
 #' }
-GFAGtargetUi <-function(browser){
-    tryCatch({
-        if (browser){
-            shiny::runApp(paste0(system.file("shiny",
-                                package="ADAMgui"),
-                                "/app2.R"),launch.browser = TRUE)
-        } else {
-            shiny::runApp(paste0(system.file("shiny",
-                                package="ADAMgui"),"/app2.R"))
-        }
-    },
-    error = function(e) {print("Parameter must be TRUE or FALSE")
-    }
-    )}
+GFAGtargetUi <- function(browser = TRUE) { 
+  tryCatch(
+    shiny::runApp(paste0(system.file("shiny", package="ADAMgui"),
+                         "/app2.R"), launch.browser = browser),
+    error = print("Parameter must be TRUE or FALSE")
+  )} 
