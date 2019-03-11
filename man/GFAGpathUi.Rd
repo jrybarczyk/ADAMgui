@@ -27,7 +27,6 @@ paths but the graphs tend to get rather long.
 \examples{
 #Creating input files
 data(DiffAedes)
-data(ExpressionAedes)
 data(GeneFunctionAedes)
 data(ResultAnalysisAedes)
 \dontrun{
@@ -35,12 +34,9 @@ data(ResultAnalysisAedes)
 write.table(DiffAedes,file = "DiffAedes.txt",sep = "\\t", col.names = TRUE,
 row.names = FALSE, quote = FALSE)
 #Input file 2
-write.table(ExpressionAedes,file = "ExpressionAedes.txt",sep = "\\t",
-col.names = TRUE, row.names = FALSE, quote = FALSE)
-#Input file 3
 write.table(GeneFunctionAedes,file = "GeneFunctionAedes.txt",sep = "\\t",
 col.names = TRUE, row.names = FALSE, quote = FALSE)
-#Input file 4
+#Input file 3
 write.table(ResultAnalysisAedes,file = "ResultAnalysisAedes.txt",sep = "\\t",
 col.names = TRUE, row.names = FALSE, quote = FALSE)
 #Grahphical analysis

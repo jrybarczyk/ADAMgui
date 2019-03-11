@@ -25,22 +25,18 @@ See the vignette for more information.
 }
 \examples{
 #Creating input files
-data(DiffHs)
-data(ExpressionHs)
-data(GeneFunctionHs)
-data(ResultAnalysisHs)
+data(DiffAedes)
+data(GeneFunctionAedes)
+data(ResultAnalysisAedes)
 \dontrun{
 #Input file 1
-write.table(DiffHs,file = "DiffHs.txt",sep = "\\t", col.names = TRUE,
+write.table(DiffHs,file = "DiffAedes.txt",sep = "\\t", col.names = TRUE,
 row.names = FALSE, quote = FALSE)
 #Input file 2
-write.table(ExpressionHs,file = "ExpressionHs.txt",sep = "\\t",
+write.table(GeneFunctionHs,file = "GeneFunctionAedes.txt",sep = "\\t",
 col.names = TRUE, row.names = FALSE, quote = FALSE)
 #Input file 3
-write.table(GeneFunctionHs,file = "GeneFunctionHs.txt",sep = "\\t",
-col.names = TRUE, row.names = FALSE, quote = FALSE)
-#Input file 4
-write.table(ResultAnalysisHs,file = "ResultAnalysisHs.txt",sep = "\\t",
+write.table(ResultAnalysisAedes,file = "ResultAnalysisAedes.txt",sep = "\\t",
 col.names = TRUE, row.names = FALSE, quote = FALSE)
 #Grahphical analysis
 GFAGtargetUi(browser = TRUE) # Launch the app in your default web browser.
