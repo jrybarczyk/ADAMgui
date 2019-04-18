@@ -1,20 +1,3 @@
-library(shiny)
-library(stringr)
-library(stringi)
-library(varhandle)
-library(DBI)
-library(GO.db)
-library(ggplot2)
-library(ggrepel)
-library(ggpubr)
-library(ggsignif)
-library(reshape2)
-library(RColorBrewer)
-library(colorRamps)
-library(DT)
-library(data.table)
-library(gridExtra)
-
 
 makePlotContainers <- function(n=1, ncol=1, prefix="plot", height=100,
 width="100%", ...) {
