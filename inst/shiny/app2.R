@@ -1,23 +1,3 @@
-library(shiny)
-library(shinyjs)
-library(stringr)
-library(stringi)
-library(GO.db)
-library(ggplot2)
-library(ggrepel)
-library(ggpubr)
-library(ggsignif)
-library(reshape2)
-library(RColorBrewer)
-library(colorRamps)
-library(dplyr)
-library(DT)
-library(data.table)
-library(gridExtra)
-
-
-
-
 
 ui <- fluidPage(
     tags$script('
