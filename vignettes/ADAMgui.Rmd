@@ -62,7 +62,7 @@ if (!requireNamespace("BiocManager", quietly = TRUE)){
 Download and installation of the development version of the package can be done 
 from the package's GitHub repositories as follows:
 ```{r GitHubGetADAMgui, eval = FALSE} 
-BiocManager::install('https://github.com/jrybarczyk/ADAMgui')
+BiocManager::install('jrybarczyk/ADAMgui')
 ```
 
 After download and installation of the desired version of the ADAMgui package,
