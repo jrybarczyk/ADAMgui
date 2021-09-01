@@ -41,7 +41,7 @@ VignetteBuilder: knitr
 LazyLoad: yes
 NeedsCompilation: no
 Encoding: UTF-8
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
 License: GPL (>= 2)
 URL: TBA
 BugReports: https://github.com/jrybarczyk/ADAMgui/issues
