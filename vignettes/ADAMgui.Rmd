@@ -13,7 +13,7 @@ output:
         toc_depth: 2
 vignette: >
     %\VignetteIndexEntry{"Using ADAMgui"}
-    %\VignetteEngine{knitr::rmarkdown}
+    %\VignetteEngine{knitr::knitr}
     %\VignetteEncoding{UTF-8}
 ---
 
