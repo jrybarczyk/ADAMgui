@@ -17,7 +17,7 @@
 #' data(DiffAedes)
 #' data(GeneFunctionAedes)
 #' data(ResultAnalysisAedes)
-#' \dontrun{
+#' \donttest{
 #' #Input file 1
 #' write.table(DiffAedes,file = "DiffAedes.txt",sep = "\t", col.names = TRUE,
 #' row.names = FALSE, quote = FALSE)
